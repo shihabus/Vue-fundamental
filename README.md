@@ -46,3 +46,13 @@ They are added into the DOM, but their `display:none`
      Dark Red
   </div>
 ```
+
+## Events
+
+### onclick
+
+```
+<button onclick="alert('greeting')">
+  Say hi
+</button>
+```
