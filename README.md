@@ -2,6 +2,8 @@
 
 ## Code
 
+To instantiate Vue, define the root element in DOM where you want inject Vue. All things defined in `data` object can been access using flower braces inside the Vue component.
+
 ```
 new Vue({
   el:'#root',
@@ -10,8 +12,16 @@ new Vue({
   }
 })
 ```
+```
+<div id='root'>
+  <h1>
+    {{greeting}}
+  </h1>
+</div>
+```
+### Conditionals
 
-### v-if,v-else-if,v-else
+#### v-if,v-else-if,v-else
 
 Thye never end up in the dom until the condition is truthy
 
@@ -27,7 +37,7 @@ Thye never end up in the dom until the condition is truthy
   </div>
 ```
 
-### v-show
+#### v-show
 
 They are added into the DOM, but their `display:none`
 
